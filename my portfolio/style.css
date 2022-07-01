@@ -1,0 +1,551 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Imprima', sans-serif;
+    height: 4000px;
+}
+section{
+    position: relative;
+    top: -20px;
+    width: 100%;
+    height: 4100px;
+    background: linear-gradient(180deg, #54005B 7.29%, #00F0FF 100%);
+    opacity: 0%;
+    animation:landing 2s forwards ease;
+}
+@keyframes landing{
+    from{
+        opacity: 0%;
+        transform: translatex(100px);
+    }
+    25%{
+        opacity: 25%;
+        transform: translatey(50px);
+    }
+    to{
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+.link{
+    display: flex;
+    position: absolute;
+    top:0px;
+    width: 1000px;
+    left: 3.5cm;
+    justify-content: space-between;
+
+    padding: 20px;
+    height: 40px;
+    background-color: #0715d31b;
+    box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.468);
+    border-radius: 20px;
+}
+.aml{
+    color: rgb(255, 136, 05);
+}
+.cml{
+    color: rgb(255, 136, 05);
+}
+.sl{
+    color: rgb(255, 136, 05);
+}
+.firstBack{
+filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.705));
+position: absolute;
+width: 1600px;
+height: 884px;
+left: -100px;
+top: -303px;
+background: rgba(255, 255, 255, 0);
+}
+.header{
+    animation:landing 10s forwards ;
+}
+.prayas{
+position: absolute;
+width: 1255px;
+height: 190px;
+left: 430px;
+top: 200px;
+
+font-family: 'Gemunu Libre', sans-serif;
+color: white;
+font-weight: 50px;
+font-size:  80px;
+
+animation: stripe 4s ease-in-out;
+animation-iteration-count: infinite;
+}
+
+.namaste{
+    color: rgba(0, 255, 194, 0.78);
+    position: absolute;
+    width: 1255px;
+    height: 190px;
+    left: 250px;
+    top: 80px;
+
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: 500;
+    font-size: 100px;
+
+    animation: stripe 4.3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+.iam{
+    position: absolute;
+    width: 1255px;
+    height: 190px;
+    left: 650px;
+    top: 138px;
+
+    font-family: 'Gemunu Libre', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+}
+.planetheader{
+    filter: invert(10px 10px black);
+    position: absolute;
+    top: 30px;
+    left:800px;
+    z-index: 0;
+    animation: stripe 5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+.star{
+    position: absolute;
+    top: -100px;
+    left:50px;
+    animation: stars 2s ease-out;
+    animation-iteration-count: infinite;
+
+}
+@keyframes stars{
+    from{
+        transform: translate(0);
+        opacity: 0;
+    }
+    25%{
+        transform: translate(1px);
+        opacity: 1;
+    }
+    to{
+        transform: translate(0);
+        opacity: 0;
+    }
+}
+
+.stripe{
+    filter: drop-shadow(30px 10px 4px #6100c1);
+    position: absolute;
+    color: #ffff;
+    animation: stripe 4s ease-in;
+    animation-iteration-count: infinite;
+}
+@keyframes stripe{
+    from{
+        transform: translatey(0);
+    }
+    50%{
+        transform: translatey(20px);
+    }
+    to{
+        transform: translatey(0);
+    }
+}
+.skill{
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.107);
+    height: 500px;
+    font-size: 50px;
+    position: relative;
+    top:560px;
+    text-align: center;
+    z-index: 10;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.127);
+    border-radius: 30px;
+    margin: 20px;
+    animation: skill 4s forwards;
+}
+
+.my_skill{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: 20px;
+    font-size: 80px;
+    color: white;
+}
+.blender{
+    position: relative;
+    top:50px;
+    left:-455px;
+    color:#FF8A00;
+}
+.photoshop{
+    position: relative;
+    top:74px;
+    left:-420px;
+    color:#00FFFF;
+}
+.web{
+    position: relative;
+    top:105px;
+    left:-350px;
+    color:#FFE600;
+}
+.unity{
+    position: relative;
+    top:90px;
+    left:-486px;
+}
+.unitybg{
+    position: relative;
+    top:-35px;
+    left: 80px;
+    opacity: 0;
+    transform: scaleX(0);
+    animation: scalex 10s forwards linear;
+}
+.WebBg{
+    position: relative;
+    top:-110px;
+    left: 80px;
+    opacity: 0;
+    transform: scaleX(0);
+    animation: scalex 12s forwards linear;
+}
+.BlenderBg{
+    position: relative;
+    top:-495px;
+    left: 80px;
+    opacity: 0;
+    transform: scaleX(0);
+    animation: scalex 6s forwards linear;
+}
+@keyframes scalex{
+    form{
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    to{
+        opacity: 100%;
+        transform: scaleX(1);
+    }
+}
+
+.Photoshopbg{
+    position: relative;
+    top:-569px;
+    left: 80px;
+    opacity: 0;
+    transform: scaleX(0);
+    animation: scalex 8s forwards linear;
+}
+.blendernotes{
+    color: aliceblue;
+    position: absolute;
+    top:130px;
+    left: 16cm;
+    transition: 3ms ease;
+}
+.photoshopnotes{
+    color: aliceblue;
+    position: absolute;
+    top:210px;
+    left: 610px;
+}
+.webnotes{
+    color: aliceblue;
+    position: absolute;
+    top:365px;
+    left: 610px;
+    animation: opacity 4.1s;
+}
+.unitynotes{
+    color: aliceblue;
+    position: absolute;
+    top:290px;
+    left: 610px;
+    animation: opacity 3.1s ;
+}
+a{
+    color: #d0ff00;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 20px;
+}
+.something{
+    position: relative;
+    top:15cm;
+    text-align: center;
+
+    color: aliceblue;
+    font-family: 'Gemunu Libre', sans-serif; ;
+    font-size: 50px;
+}
+.myself{
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.107);
+    top:15cm;
+    height: 500px;
+    font-size: 50px;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.127);
+    border-radius: 30px;
+    margin: 20px;
+}
+.love{
+    color: aliceblue;
+}
+.favourite{
+    position: relative;
+    top:35px;
+    left:-11cm;
+    font-size: 60px;
+}
+
+.mabs{
+    position: relative;
+    top:50px;
+    left:30px;
+    font-size: 40px;
+    line-height: 80px;
+}
+.movie{
+    position: relative;
+    left: -122px;
+}
+.album{
+    position: relative;
+    left: -5.6cm;
+}
+.band{
+    position: relative;
+    left: -8.25cm;
+}
+.series{
+    position: relative;
+    left: -10.45cm;
+}
+.pink{
+    color: #FC7BFF;
+    font-family: 'Imprima', sans-serif;
+    font-size: 40px;
+}
+.pink_moon{
+    filter: drop-shadow(20px 20px 2px rgb(0, 0, 0));
+    filter: opacity(80%);
+    position: relative;
+    top: -11cm;
+    left: 11cm;
+    z-index: -10;
+    animation: stripe 4s ease-in-out;
+    animation-iteration-count: infinite;
+}
+.more{
+    margin: 20px;
+    line-height: 70px;
+    position: relative;
+    top:4.6cm;
+    font-size: 40px;
+    left:5.8cm;
+}
+
+.rectanglecurve{
+    filter: drop-shadow(7px 7px 2px black);
+    position: relative;
+    top:17cm;
+    left: 80px;
+}
+.guitar{
+    position: relative;
+    top:-250px;
+    left:100px
+}
+.live{
+    line-height: 60px;
+    position: relative;
+    top:-150px;
+
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.nepal{
+    color: black;
+}
+.quote{
+    font-size: 35px;
+}
+.rectanglecurve2{
+    position: relative;
+    top:-9cm;
+    left:1.4cm;
+}
+.mountain{
+    position: relative;
+    top:-7cm;
+}
+.reflection{
+    position: relative;
+    top:-21.5cm;
+}
+.contact{
+    position: relative;
+    top:-0cm;
+    text-align: center;
+    line-height: 100px;
+}
+.mail{
+    display: inline-block;
+    position: relative;
+    top: 3cm;
+    left:0cm;
+    color: rgb(201, 0, 0);
+    border-left: 3px solid rgba(223, 15, 0, 0.88);
+    height: 0px;
+    border-radius: 0 6px 6px 0;
+    background-color: rgba(240, 248, 255, 0);
+    padding: 3px;
+    transition: 0.5s ease-in-out;
+}
+.mail:hover{
+    margin:10px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.224);
+}
+.fb{
+    display: inline-block;
+    position: relative;
+    left:-10px;
+    color: rgb(72, 0, 255);
+    border-left: 3px solid rgba(0, 0, 255, 0.88);
+    height: 0px;
+    border-radius: 0 6px 6px 0;
+    background-color: rgba(240, 248, 255, 0);
+    padding: 3px;
+    transition: 0.5s ease-in-out;
+}
+.fb:hover{
+   height: 90px;
+   margin: 10px;
+   background-color: rgba(255, 255, 255, 0.224);
+}
+.IG{
+    display: inline-block;
+    position: relative;
+    left:-5px;
+    color: rgb(255, 0, 157);
+    border-left: 3px solid rgba(255, 0, 72, 0.749);
+    height: 0px;
+    border-radius: 0 6px 6px 0;
+    background-color: rgba(240, 248, 255, 0);
+    padding: 3px;
+    transition: 0.5s ease-out;
+}
+.IG:hover{
+    height: 90px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.224);
+ }
+.me{
+    font-size: 40px;
+}
+.thank{
+    position: relative;
+    text-align: center;
+    top: 80px;
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+}
+img{
+    height: 40px;
+    width: 40px;
+}
+.sun{
+    z-index: 0;
+    position: relative;
+    left: -3cm;
+    animation: sun 5s infinite  linear;
+}
+@keyframes sun{
+    from{
+        transform:scale(1)
+    }
+    25%{
+        transform: scale(1.1)
+    }
+    to{
+        transform:scale(1)
+    }
+}
+.sm{
+    position: relative;
+    top: -10cm;
+    height: 300px;
+}
+
+@media (max-width:1325px){
+.skill{
+    font-size: 30px;
+}
+.notes{
+    font-size: 20px;
+    position: relative;
+    top:-21.5cm;
+    left:-100px;
+}
+.blendernotes{
+    position: relative;
+    left:300px; 
+}
+.photoshopnotes{
+    position: relative;
+    left:300px; 
+}
+.unitynotes{
+    position: relative;
+    left:300px;
+    top:260px
+}
+.webnotes{
+    position: relative;
+    left:300px;
+    top:330px
+}
+.bpuwBG
+{
+    opacity: 0;
+}
+.photoshop{
+    position: relative;
+    left:-430px;
+    top:100px;
+}
+.unity{
+    position: relative;
+    left: -460px;
+    top:150px;
+}
+.web{
+    position: relative;
+    left: -380px;
+    top:200px;
+}
+.bpuw{
+    position: relative;
+    left: 3cm;
+}
+.skill{
+    margin: 50px;
+}
+
+}
